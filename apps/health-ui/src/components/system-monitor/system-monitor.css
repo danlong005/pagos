@@ -1,0 +1,30 @@
+
+.system-monitor-container {
+    display: flex;
+    float: left;
+    text-align: left;
+    min-width: 49vw;
+}
+
+.system-monitor-status {
+    flex: 1;
+}
+
+.system-monitor-details {
+    flex: 6;
+    padding-bottom: 15px;
+}
+
+.system-monitor-details-container {
+    display: flex;
+    font-size: 10pt;
+}
+
+.system-monitor-details-left {
+    flex: 1;
+    font-weight: bold;
+}
+
+.system-monitor-details-right {
+    flex: 5;
+}

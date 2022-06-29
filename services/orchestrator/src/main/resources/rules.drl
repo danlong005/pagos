@@ -1,0 +1,22 @@
+import  com.pagos.orchestrator.entities.Transaction;
+
+rule "First Run With World Pay"
+    when
+        transactionObject : Transaction( attempt < 1 || attempt == null );
+    then
+        transactionObject.vendor = "WORLD_PAY";
+end;
+
+rule "Second Run With Authorize.Net"
+    when
+        transactionObject : Transaction( attempt == 1 );
+    then
+        transactionObject.vendor = "AUTHORIZE_NET";
+end;
+
+rule "Give Up"
+     when
+         transactionObject : Transaction( attempt == 2 );
+     then
+         transactionObject.vendor = "GIVE_UP";
+ end;
