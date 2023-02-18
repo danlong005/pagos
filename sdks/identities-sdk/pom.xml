@@ -6,7 +6,7 @@
 
     <groupId>com.pagos</groupId>
     <artifactId>identities-sdk</artifactId>
-    <version>1.2</version>
+    <version>1.3</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -26,7 +26,7 @@
         <repository>
             <id>github</id>
             <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/danlong005/identities-sdk</url>
+            <url>https://maven.pkg.github.com/danlong005/pagos</url>
         </repository>
     </distributionManagement>
 </project>

@@ -44,7 +44,7 @@ public class OrchestratorConfiguration {
 
         registrationBean.addUrlPatterns("/v1/transactions/*");
         registrationBean.addUrlPatterns("/v1/health");
-`
+
         return registrationBean;
     }
 

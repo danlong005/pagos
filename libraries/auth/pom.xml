@@ -17,7 +17,7 @@
         <repository>
             <id>github</id>
             <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/danlong005/auth</url>
+            <url>https://maven.pkg.github.com/danlong005/pagos</url>
         </repository>
     </distributionManagement>
 

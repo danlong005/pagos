@@ -1,5 +1,5 @@
 import './App.css';
-import SystemMonitor from './components/system-monitor/system-monitor';
+import SystemMonitor from '../system-monitor/system-monitor';
 
 function App() {
     let systems = [
