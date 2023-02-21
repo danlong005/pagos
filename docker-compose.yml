@@ -13,4 +13,44 @@ services:
       - pagos
     ports:
       - 8080
+    container_name: identities
   
+  vault:
+    build:
+      context: ./services/vault
+      dockerfile: ./Dockerfile
+    networks:
+      - pagos
+    ports:
+      - 8081
+    container_name: vault
+
+  transactor:
+    build: 
+      context: ./services/transactor
+      dockerfile: ./Dockerfile
+    networks: 
+      - pagos
+    ports:
+      - 8082
+    container_name: transactor
+
+  orchestrator:
+    build:
+      context: ./services/orchestrator
+      dockerfile: ./Dockerfile
+    networks:
+      - pagos
+    ports:
+      - 8083
+    container_name: orchestrator
+  
+  health:
+    build:
+      context: ./apps/health-ui
+      dockerfile: ./Dockerfile
+    networks:
+      - pagos
+    ports:
+      - 8084
+    container_name: health
