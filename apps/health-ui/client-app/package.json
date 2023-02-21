@@ -36,7 +36,7 @@
   "scripts": {
     "start": "react-scripts start",
     "dev:webpack": "webpack -w --progress --color --mode=development",
-    "build": "rimraf ../wwwroot && webpack && rimraf ../wwwroot/index.html",
+    "build": "rimraf ../src/main/resources/static && webpack && rimraf ../src/main/resources/static/index.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

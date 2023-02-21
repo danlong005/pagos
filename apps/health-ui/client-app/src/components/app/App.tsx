@@ -1,7 +1,12 @@
 import './App.css';
-import SystemMonitor from '../system-monitor/system-monitor';
+import { SystemMonitor } from '../system-monitor/system-monitor';
+import React, { FC } from 'react';
 
-function App() {
+export interface IAppProps {
+
+};
+
+export const App: FC<IAppProps> = (props: IAppProps) => {
     let systems = [
         {
             key: 1,
@@ -36,4 +41,3 @@ function App() {
     );
 }
 
-export default App;

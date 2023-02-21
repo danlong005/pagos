@@ -1,0 +1,16 @@
+version: '3'
+
+networks:
+  pagos:
+    name: pagos
+
+services:
+  identities:
+    build: 
+      context: ./services/identities
+      dockerfile: ./Dockerfile
+    networks:
+      - pagos
+    ports:
+      - 8080
+  

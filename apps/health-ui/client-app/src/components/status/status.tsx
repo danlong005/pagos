@@ -1,5 +1,10 @@
+import React, { FC } from 'react';
 
-export default function Status (props)
+export interface IStatusProps {
+    value: boolean;
+};
+
+export const Status: FC<IStatusProps> = (props: IStatusProps) =>
 {
     return (
         <div>

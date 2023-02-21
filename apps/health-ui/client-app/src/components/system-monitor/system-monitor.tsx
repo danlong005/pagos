@@ -1,10 +1,17 @@
-import {useEffect, useState} from "react";
-import Status from '../status/status';
+import React, {FC, useEffect, useState} from 'react';
+import { Status } from '../status/status';
 import axios from 'axios';
 
 import './system-monitor.css';
 
-export default function SystemMonitor(props)
+export interface ISystemMonitorProps {
+    system: {
+        url: string;
+        name: string;
+    }
+};
+
+export const SystemMonitor: FC<ISystemMonitorProps> = (props: ISystemMonitorProps) =>
 {
     const [status, setStatus] = useState(false);
     const [commit, setCommit] = useState("");
