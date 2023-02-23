@@ -54,3 +54,13 @@ services:
     ports:
       - "8084:8084"
     container_name: health
+
+  payment:
+    build:
+      context: ./apps/payments-ui
+      dockerfile: ./Dockerfile
+    networks:
+      - pagos
+    ports:
+      - "8085:8085"
+    container_name: payment
