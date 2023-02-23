@@ -1,4 +1,4 @@
-FROM maven:3.6.3-openjdk-17-slim as build
+FROM maven:3.9.0-eclipse-temurin-17 as build
 
 ARG GIT_USERNAME
 ARG GIT_PERSONAL_ACCESS_TOKEN
@@ -15,7 +15,7 @@ COPY . ./
 RUN mvn -s settings.xml clean install
 
 
-FROM maven:3.6.3-openjdk-17-slim
+FROM maven:3.9.0-eclipse-temurin-17
 
 ARG JAVA_ENV
 ENV JAVA_ENV=${JAVA_ENV}

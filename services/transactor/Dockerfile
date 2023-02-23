@@ -1,4 +1,4 @@
-FROM maven:3.6.3-openjdk-17-slim as build
+FROM maven:3.9.0-eclipse-temurin-17 as build
 
 ARG GIT_USERNAME
 ARG GIT_PERSONAL_ACCESS_TOKEN
