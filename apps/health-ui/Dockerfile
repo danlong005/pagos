@@ -1,4 +1,4 @@
-FROM maven:3.6.3-openjdk-17-slim as build
+FROM maven:3.9.0-eclipse-temurin-17 as build
 
 ARG GIT_USERNAME
 ARG GIT_PERSONAL_ACCESS_TOKEN
@@ -26,7 +26,7 @@ WORKDIR /app
 RUN mvn -s settings.xml clean install
 
 
-FROM tomcat
+FROM maven:3.9.0-eclipse-temurin-17
 
 ARG JAVA_ENV
 ENV JAVA_ENV=${JAVA_ENV}
@@ -37,4 +37,5 @@ ARG GIT_PERSONAL_ACCESS_TOKEN
 ENV GIT_USERNAME=${GIT_USERNAME}
 ENV GIT_PERSONAL_ACCESS_TOKEN=${GIT_PERSONAL_ACCESS_TOKEN}
 
-COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/
+COPY --from=build /app/target/health.war ./
+ENTRYPOINT ["java", "-jar", "health.war"]
