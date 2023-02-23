@@ -30,7 +30,7 @@
     <server>
       <id>github</id>
       <username>danlong005</username>
-      <password>${GIT_PERSONAL_ACCESS_TOKEN}</password>
+      <password>${env.GIT_PERSONAL_ACCESS_TOKEN}</password>
     </server>
   </servers>
 </settings>

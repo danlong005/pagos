@@ -57,7 +57,7 @@ services:
 
   payment:
     build:
-      context: ./apps/payments-ui
+      context: ./apps/payment-ui
       dockerfile: ./Dockerfile
     networks:
       - pagos
