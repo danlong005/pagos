@@ -1,4 +1,4 @@
-package com.paygos.wallet.services;
+package com.pagos.wallet.services;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.web.client.RestClient;
 import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import com.paygos.wallet.models.PaymentMethod;
+import com.pagos.wallet.models.PaymentMethod;
 
 @Service
 public class PaymentMethodService {

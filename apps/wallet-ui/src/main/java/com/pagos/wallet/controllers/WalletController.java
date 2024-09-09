@@ -1,4 +1,4 @@
-package com.paygos.wallet.controllers;
+package com.pagos.wallet.controllers;
 
 
 import java.util.HashMap;
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.paygos.wallet.layouts.ModelAndViewManager;
-import com.paygos.wallet.models.PaymentMethod;
-import com.paygos.wallet.services.PaymentMethodService;
+import com.pagos.wallet.layouts.ModelAndViewManager;
+import com.pagos.wallet.models.PaymentMethod;
+import com.pagos.wallet.services.PaymentMethodService;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;

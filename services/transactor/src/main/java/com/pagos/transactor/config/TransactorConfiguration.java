@@ -2,7 +2,8 @@ package com.pagos.transactor.config;
 
 import com.pagos.filters.AuthorizationFilter;
 import com.pagos.filters.CorsFilter;
-import health.CommitHealthIndicator;
+import com.pagos.health.CommitHealthIndicator;
+
 import org.springframework.boot.actuate.health.HealthIndicator;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;

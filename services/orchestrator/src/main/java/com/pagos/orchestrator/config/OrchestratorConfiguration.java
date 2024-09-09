@@ -2,7 +2,8 @@ package com.pagos.orchestrator.config;
 
 import com.pagos.filters.AuthorizationFilter;
 import com.pagos.filters.CorsFilter;
-import health.CommitHealthIndicator;
+import com.pagos.health.CommitHealthIndicator;
+
 import org.kie.api.KieServices;
 import org.kie.api.builder.KieBuilder;
 import org.kie.api.builder.KieFileSystem;

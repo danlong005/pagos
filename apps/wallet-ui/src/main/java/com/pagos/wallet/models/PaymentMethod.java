@@ -1,4 +1,4 @@
-package com.paygos.wallet.models;
+package com.pagos.wallet.models;
 
 import lombok.Getter;
 import lombok.Setter;

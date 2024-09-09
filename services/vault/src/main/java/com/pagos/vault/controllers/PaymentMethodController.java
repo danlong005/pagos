@@ -6,7 +6,6 @@ import com.pagos.exceptions.UnauthorizedException;
 import com.pagos.vault.entities.PaymentMethodFullResponse;
 import com.pagos.vault.entities.PaymentMethodRequest;
 import com.pagos.vault.entities.PaymentMethodResponse;
-import com.pagos.vault.models.PaymentMethod;
 import com.pagos.vault.services.PaymentMethodService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

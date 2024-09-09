@@ -1,4 +1,4 @@
-package com.paygos.wallet.layouts;
+package com.pagos.wallet.layouts;
 
 import java.util.HashMap;
 import java.util.Map;

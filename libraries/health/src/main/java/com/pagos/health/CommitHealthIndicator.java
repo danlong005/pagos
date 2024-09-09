@@ -1,4 +1,4 @@
-package health;
+package com.pagos.health;
 
 
 import org.springframework.boot.actuate.health.Health;
